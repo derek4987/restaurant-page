@@ -1,4 +1,5 @@
 .hello {
     color: red;
-    background: url('./test.png');
+    background: url('../src/asssets/img/test.png');
+    border: 2px solid red;
 }
