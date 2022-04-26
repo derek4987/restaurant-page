@@ -11,14 +11,7 @@ testimg.src = Test;
 
 function component() {
   const element = document.createElement('div');
-  // const newelement = document.createElement('div');
-  // use your function!
-  // element.textContent = myName('Cody');
-  element.innerHTML = `
-  <img class="hello" src="../src/asssets/img/test2.png" alt="">
-  <div class="hello">border</div>
-  `
-  // newelement.innerHTML = img();
+  
   return element;
 }
 

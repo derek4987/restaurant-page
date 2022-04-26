@@ -1,3 +1,17 @@
+:root {
+    background-color: #823303;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .hello {
     color: red;
     background: url('../src/asssets/img/test.png');
