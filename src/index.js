@@ -1,21 +1,15 @@
 import _ from 'lodash';
-// import Test from './test.png';
 import './style.css';
-import myName from './home';
-import img from './home';
+import navContent from './nav';
 
-import Test from './asssets/img/test.png';
-
-const testimg = new Image();
-testimg.src = Test;
-
-function component() {
-  const element = document.createElement('div');
+function homePage() {
+  const element = navContent();;
   
   return element;
 }
 
-document.body.appendChild(component());
+const pageContent = document.querySelector('#content');
+pageContent.appendChild(homePage());
 
 
 
