@@ -1,15 +1,19 @@
 import _ from 'lodash';
 import './style.css';
 import navContent from './nav';
+import homeContent from './home';
+
+// navbar
+const navBar = navContent();
 
 function homePage() {
-  const element = navContent();;
+  const element = homeContent();
   
   return element;
 }
 
 const pageContent = document.querySelector('#content');
-pageContent.appendChild(homePage());
+pageContent.append(navBar,homePage());
 
 
 
