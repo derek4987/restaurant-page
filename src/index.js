@@ -3,13 +3,18 @@ import './style.css';
 import navContent from './nav';
 import homeContent from './home';
 import contactContent from './contact';
+import menuContent from './menu';
 
 // navbar - default on initial open
 const navBar = navContent();
 
 // open initial page starting at homepage
+// const pageContent = document.querySelector('#content');
+// pageContent.append(navBar,homePage());
+
+// modified start page while working on menu page
 const pageContent = document.querySelector('#content');
-pageContent.append(navBar,homePage());
+pageContent.append(navBar,menuPage());
 
 // home tab content - default on initial open
 function homePage() {
@@ -25,6 +30,13 @@ function contactPage() {
   return element;
 }
 
+// menu tab content
+function menuPage() {
+  const element = menuContent();
+
+  return element;
+}
+
 
 document.addEventListener('click', function(e) {
 
@@ -34,7 +46,8 @@ document.addEventListener('click', function(e) {
   }
 
   if (e.target.matches('#menuButton')) {
-
+    pageContent.innerHTML = '';
+    pageContent.append(navBar,menuPage());
   }
 
   if (e.target.matches('#contactButton')) {
