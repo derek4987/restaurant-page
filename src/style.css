@@ -79,3 +79,35 @@ button {
     margin-top: -30px;
     align-self: center;
 }
+
+/* contact tab */
+#c-tabContent {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.c-txtWrapper {
+    margin-left: 50px;      
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;  
+}
+
+.c-description {
+    font-size: 2rem;
+    max-width: 900px;
+    min-width: 450px;
+    
+}
+
+#c-logo {
+    width: 80vw;
+    min-width: 400px;
+    margin-top: -30px;
+    align-self: center;
+}
+
+.c-workWithUs {
+    font-size: 1.5rem;
+}
