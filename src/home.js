@@ -8,15 +8,12 @@ const homeContent = () => {
 
     // restaurant home page text
     const description = newDiv('h-description','');
-    description.textContent = "A Brunswick based bakery and cafe that loves sourdough, seasonal produce and community. Drop in for a coffee or stay for a long lunch. You're welcome to come as you are."
+    description.textContent = "A Brunswick based bakery and cafe that loves sourdough, seasonal produce and community. Drop in for a coffee or stay for a long lunch. You're welcome to come as you are. Check out our menu!"
 
     // img logo
     const img = new Image();
     img.src = Logo;
-
-    // const imgLogo = document.createElement('img');
     img.setAttribute('id','logo');
-    // imgLogo.setAttribute('src',`${img}`);
 
     // add children
     tabContent.append(description, img);

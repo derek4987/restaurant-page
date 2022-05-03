@@ -9,12 +9,8 @@ import menuContent from './menu';
 const navBar = navContent();
 
 // open initial page starting at homepage
-// const pageContent = document.querySelector('#content');
-// pageContent.append(navBar,homePage());
-
-// modified start page while working on menu page
 const pageContent = document.querySelector('#content');
-pageContent.append(navBar,menuPage());
+pageContent.append(navBar,homePage());
 
 // home tab content - default on initial open
 function homePage() {
@@ -56,22 +52,3 @@ document.addEventListener('click', function(e) {
   }
 
 })
-
-
-// function component() {
-//     const element = document.createElement('div');
-  
-//     // Lodash, new imported by this script
-//     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-//     element.classList.add('hello');
-
-//     // add image to our existing div.
-//     const test = new Image();
-//     test.src = Test;
-
-//     element.appendChild(test);
-  
-//     return element;
-//   }
-  
-//   document.body.appendChild(component());

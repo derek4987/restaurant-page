@@ -1,5 +1,6 @@
 :root {
     background-color: #823303;
+    min-height: auto;
 }
 
 @font-face {
@@ -113,3 +114,62 @@ button {
 }
 
 /* menu tab */
+.m-border {
+    margin: 60px 70px;
+    border: 5px dotted black;
+}
+
+.m-logo {
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 0px 40px 50px 40px;
+    justify-content: space-around;
+}
+
+.m-menu1 {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.m-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.m-menu2 {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.m-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.m-title {
+    max-width: 625px;
+}
+
+.m-price {
+    font-weight: 600;
+}
+
+.m-heading {
+    text-decoration: underline;
+    font-size: 1.4rem;
+    max-width: 700px;
+}

@@ -28,10 +28,7 @@ const contactContent = () => {
     // img logo
     const img = new Image();
     img.src = Logo;
-
-    // const imgLogo = document.createElement('img');
     img.setAttribute('id','c-logo');
-    // imgLogo.setAttribute('src',`${img}`);
 
     // add children
     tabContent.append(txtWrapper, img);
